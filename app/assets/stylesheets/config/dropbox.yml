@@ -1,0 +1,10 @@
+#
+#dropbox.yml
+app_key: "d4suhf9ni7y8kgc"
+app_secret: <%= ENV["APP_SECRET"]%>
+
+access_token: "wuog6vr23g0mhw4n"
+access_token_secret: <%= ENV["ACCESS_TOKEN_SECRET"]%>
+
+user_id: "321611744"
+access_type: "app_folder"
