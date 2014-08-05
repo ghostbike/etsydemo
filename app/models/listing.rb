@@ -22,6 +22,7 @@ end
 
 validates :ame, :description, :price, presence: true
 validates :price, numericality: {greater_than: 0}
+#validates listing.user.name, presence: true
 validates_attachment_presence :image
 
 #linking the user to the listing
