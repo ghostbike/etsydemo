@@ -27,4 +27,5 @@ validates_attachment_presence :image
 
 #linking the user to the listing
 belongs_to :user
+has_many :orders
 end
