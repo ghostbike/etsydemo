@@ -28,7 +28,7 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   # Modified on 9/7 based on http://natashatherobot.com/rails-4-heroku-assets-not-found-css-image/
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true

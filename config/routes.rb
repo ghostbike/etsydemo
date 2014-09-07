@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  resources :orders
+  
 
   devise_for :users
-  resources :listings
+  # part of the function to include listing in path
+  resources :listings do
+  # by moving this later it means it wants to include the listing
+  # id number in the url for the orders pages
+  resources :orders
 
+end
   get 'pages/about'
 
   get 'pages/contact'

@@ -8,6 +8,8 @@
 		<h3><%= @listing.ame %></h3>
 		<h5><%= number_to_currency(@listing.price) %></h5>
 		<h5><%= @listing.description %></h5>
+		<!-- whenever you see an _id in the route path you need to tell rails which listing to use -->
+		<br><%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-primary" %>
 	</div>
 	
 </div>
