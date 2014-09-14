@@ -2,6 +2,7 @@
   <% if @listing.errors.any? %>
     <div id="error_explanation" class="alert alert-danger alert-dismissable">
        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    
       <h4><%= pluralize(@listing.errors.count, "error") %> prohibited this listing from being saved:</h4>
 
       <ul>

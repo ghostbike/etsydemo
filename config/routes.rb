@@ -6,11 +6,12 @@ Rails.application.routes.draw do
   resources :listings do
   # by moving this later it means it wants to include the listing
   # id number in the url for the orders pages
-  resources :orders
+  resources :orders, only: [:new, :create] 
 
 end
   get 'pages/about'
-
+  get 'sales' => "orders#sales"
+  get 'purchases' => "orders#purchases"
   get 'pages/contact'
   get 'seller' => "listings#seller"
 
